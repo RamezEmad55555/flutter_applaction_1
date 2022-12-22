@@ -62,18 +62,17 @@ class Details extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Container(
-                  padding: EdgeInsets.all(4),
-                  child: Text(
-                    "New",
-                    style: TextStyle(fontSize: 16),
-                  ),
-                  decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 255, 129, 129),
-                    borderRadius: BorderRadius.circular(4),
-                  ),
-                ),
+                    padding: EdgeInsets.all(4),
+                    child: Text(
+                      "New",
+                      style: TextStyle(fontSize: 16),
+                    ),
+                    decoration: BoxDecoration(
+                      color: Color.fromARGB(255, 255, 129, 129),
+                      borderRadius: BorderRadius.circular(4),
+                    )),
                 SizedBox(
-                  width: 12,
+                  width: 10,
                 ),
                 Row(
                   children: [
@@ -124,7 +123,21 @@ class Details extends StatelessWidget {
                   ],
                 ),
               ],
-            )
+            ),
+            SizedBox(
+              height: 25,
+            ),
+            SizedBox(
+              width: double.infinity,
+              child: Text(
+                "Details : ",
+                style: TextStyle(fontSize: 23),
+                textAlign: TextAlign.start,
+              ),
+            ),
+            SizedBox(
+              height: 16,
+            ),
           ],
         ));
   }
