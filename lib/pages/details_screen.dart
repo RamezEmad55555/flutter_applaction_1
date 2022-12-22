@@ -39,7 +39,7 @@ class Details extends StatelessWidget {
             ),
           ],
           backgroundColor: appbarGreen,
-          title: Text("Home"),
+          title: Text("Details"),
         ),
         body: Text("details"));
   }
