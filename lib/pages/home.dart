@@ -1,12 +1,20 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, unused_import, sort_child_properties_last, unnecessary_import
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, unused_import, sort_child_properties_last, unnecessary_import, must_be_immutable
 
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/shared/colors.dart';
 
+class Item {
+  String imgPath;
+  double price;
+  Item({required this.imgPath, required this.price});
+}
+
 class Home extends StatelessWidget {
-  const Home({Key? key}) : super(key: key);
+  List item = [Item(imgPath: "assets/img/Audi.png", price: 15000)];
+
+  Home({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
