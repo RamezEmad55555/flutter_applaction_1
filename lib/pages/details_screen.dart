@@ -41,6 +41,11 @@ class Details extends StatelessWidget {
           backgroundColor: appbarGreen,
           title: Text("Details"),
         ),
-        body: Text("details"));
+        body: Column(
+          children: [
+            Image.asset("assets/img/Audi.png"),
+            Text("details"),
+          ],
+        ));
   }
 }
