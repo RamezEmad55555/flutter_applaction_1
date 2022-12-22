@@ -12,7 +12,16 @@ class Item {
 }
 
 class Home extends StatelessWidget {
-  List item = [Item(imgPath: "assets/img/Audi.png", price: 15000)];
+  final List<Item> items = [
+    Item(imgPath: "assets/img/Audi.png", price: 15000),
+    Item(imgPath: "assets/img/car.png", price: 15000),
+    Item(imgPath: "assets/img/hyundai.png", price: 15000),
+    Item(imgPath: "assets/img/kia selots.png", price: 15000),
+    Item(imgPath: "assets/img/Nissan.png", price: 15000),
+    Item(imgPath: "assets/img/volvo.png", price: 15000),
+    Item(imgPath: "assets/img/volvo.png", price: 15000),
+    Item(imgPath: "assets/img/kia.png", price: 15000),
+  ];
 
   Home({Key? key}) : super(key: key);
 
