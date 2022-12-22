@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/shared/colors.dart';
@@ -62,12 +62,41 @@ class Details extends StatelessWidget {
                   padding: EdgeInsets.all(4),
                   child: Text(
                     "New",
-                    style: TextStyle(fontSize: 12),
+                    style: TextStyle(fontSize: 16),
                   ),
                   decoration: BoxDecoration(
                     color: Color.fromARGB(255, 255, 129, 129),
                     borderRadius: BorderRadius.circular(4),
                   ),
+                ),
+                Row(
+                  children: [
+                    Icon(
+                      Icons.star,
+                      size: 28,
+                      color: Color.fromARGB(255, 255, 191, 0),
+                    ),
+                    Icon(
+                      Icons.star,
+                      size: 28,
+                      color: Color.fromARGB(255, 255, 191, 0),
+                    ),
+                    Icon(
+                      Icons.star,
+                      size: 28,
+                      color: Color.fromARGB(255, 255, 191, 0),
+                    ),
+                    Icon(
+                      Icons.star,
+                      size: 28,
+                      color: Color.fromARGB(255, 255, 191, 0),
+                    ),
+                    Icon(
+                      Icons.star,
+                      size: 28,
+                      color: Color.fromARGB(255, 255, 191, 0),
+                    ),
+                  ],
                 )
               ],
             )
