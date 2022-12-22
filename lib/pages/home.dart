@@ -150,7 +150,7 @@ class Home extends StatelessWidget {
               ),
             ],
             backgroundColor: appbarGreen,
-            title: Text("Home1"),
+            title: Text("Home"),
           )),
     );
   }
