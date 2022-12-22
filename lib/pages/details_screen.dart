@@ -5,8 +5,14 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/shared/colors.dart';
 
-class Details extends StatelessWidget {
-  const Details({super.key});
+class Details extends StatefulWidget {
+  @override
+  State<Details> createState() => _DetailsState();
+}
+
+class _DetailsState extends State<Details> {
+  // const Details({super.key});
+  bool isReadmore = true;
 
   @override
   Widget build(BuildContext context) {
@@ -144,13 +150,17 @@ class Details extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 18,
                 ),
-                maxLines: 4,
+                maxLines: isReadmore ? 4 : null,
                 overflow: TextOverflow.fade,
               ),
               TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    setState(() {
+                      isReadmore = !isReadmore;
+                    });
+                  },
                   child: Text(
-                    "Read more",
+                    isReadmore ? "Read more" : "Read less",
                     style: TextStyle(
                       fontSize: 20,
                     ),
