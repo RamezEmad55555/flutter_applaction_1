@@ -59,6 +59,7 @@ class Details extends StatelessWidget {
               height: 16,
             ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Container(
                   padding: EdgeInsets.all(4),
@@ -70,6 +71,9 @@ class Details extends StatelessWidget {
                     color: Color.fromARGB(255, 255, 129, 129),
                     borderRadius: BorderRadius.circular(4),
                   ),
+                ),
+                SizedBox(
+                  width: 12,
                 ),
                 Row(
                   children: [
@@ -99,6 +103,9 @@ class Details extends StatelessWidget {
                       color: Color.fromARGB(255, 255, 191, 0),
                     ),
                   ],
+                ),
+                SizedBox(
+                  width: 60,
                 ),
                 Row(
                   children: [
@@ -112,10 +119,10 @@ class Details extends StatelessWidget {
                     ),
                     Text(
                       "Car shop",
-                      style: TextStyle(fontSize: 14),
+                      style: TextStyle(fontSize: 18),
                     ),
                   ],
-                )
+                ),
               ],
             )
           ],
