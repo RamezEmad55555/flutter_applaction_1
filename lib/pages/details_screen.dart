@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/shared/colors.dart';
 
@@ -44,7 +46,16 @@ class Details extends StatelessWidget {
         body: Column(
           children: [
             Image.asset("assets/img/Audi.png"),
-            Text("details"),
+            SizedBox(
+              height: 11,
+            ),
+            Text(
+              "\$ 15,000",
+              style: TextStyle(fontSize: 20),
+            ),
+            SizedBox(
+              height: 16,
+            ),
           ],
         ));
   }
