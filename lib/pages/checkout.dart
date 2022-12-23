@@ -28,6 +28,7 @@ class CheckOut extends StatelessWidget {
                       leading: CircleAvatar(
                         backgroundImage: AssetImage("PATH"),
                       ),
+                      title: Text("TEST"),
                     ),
                   );
                 }),
