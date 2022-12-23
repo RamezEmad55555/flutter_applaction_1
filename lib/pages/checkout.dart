@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/provider/cart.dart';
 import 'package:flutter_application_1/shared/appbar.dart';
@@ -20,8 +22,7 @@ class CheckOut extends StatelessWidget {
             height: 300,
             child: ListView.builder(
                 padding: const EdgeInsets.all(8),
-                //itemCount: ClassInstance.selectedProducts.length,
-                itemCount: 5,
+                itemCount: ClassInstance.selectedProducts.length,
                 itemBuilder: (BuildContext context, int index) {
                   return Card(
                     child: ListTile(
