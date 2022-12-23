@@ -47,14 +47,14 @@ class CheckOut extends StatelessWidget {
               ElevatedButton(
                   onPressed: () {},
                   child: Text(
-                    "click here",
+                    "Pay \$${ClassInstance.price}",
                     style: TextStyle(fontSize: 19),
                   ),
                   style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all(BTNpink),
                       padding: MaterialStateProperty.all(EdgeInsets.all(12)),
                       shape: MaterialStateProperty.all(RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8)))))
+                          borderRadius: BorderRadius.circular(8))))),
             ],
           ),
         );
