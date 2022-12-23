@@ -5,6 +5,7 @@ import 'package:flutter_application_1/pages/Login.dart';
 import 'package:flutter_application_1/pages/details_screen.dart';
 import 'package:flutter_application_1/pages/home.dart';
 import 'package:flutter_application_1/pages/register.dart';
+import 'package:provider/provider.dart';
 
 void main() {
   runApp(const MyApp());
