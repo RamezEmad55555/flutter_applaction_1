@@ -14,5 +14,7 @@ class Cart with ChangeNotifier {
 
   delete(Item product) {
     selectedProducts.remove(product);
+    price -= product.price;
+    notifyListeners();
   }
 }
