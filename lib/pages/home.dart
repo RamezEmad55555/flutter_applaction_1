@@ -1,29 +1,13 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, unused_import, sort_child_properties_last, unnecessary_import, must_be_immutable
 
 import 'dart:ui';
-
+import 'package:flutter_application_1/model/product.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/shared/colors.dart';
-
-class Item {
-  String imgPath;
-  double price;
-  Item({required this.imgPath, required this.price});
-}
+import 'package:flutter_application_1/pages/details_screen.dart';
 
 class Home extends StatelessWidget {
-  final List<Item> items = [
-    Item(price: 15000, imgPath: "assets/img/Audi.png"),
-    Item(price: 30000, imgPath: "assets/img/w.png"),
-    Item(price: 22000, imgPath: "assets/img/hyundai.png"),
-    Item(price: 18000, imgPath: "assets/img/kia selots.png"),
-    Item(price: 20000, imgPath: "assets/img/Nissan.png"),
-    Item(price: 32000, imgPath: "assets/img/volvo.png"),
-    Item(price: 28000, imgPath: "assets/img/volvo.png"),
-    Item(price: 15000, imgPath: "assets/img/kia.png"),
-  ];
-
-  Home({Key? key}) : super(key: key);
+  const Home({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +24,14 @@ class Home extends StatelessWidget {
                 itemCount: items.length,
                 itemBuilder: (BuildContext context, int index) {
                   return GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Details(product: items[index]),
+                        ),
+                      );
+                    },
                     child: GridTile(
                       child: Stack(children: [
                         Positioned(
