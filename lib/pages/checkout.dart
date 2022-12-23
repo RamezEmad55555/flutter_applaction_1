@@ -7,6 +7,12 @@ class CheckOut extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return;
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Checkout screen"),
+        actions: [ProductsAndPrice()],
+      ),
+      body: Text("data"),
+    );
   }
 }
