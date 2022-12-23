@@ -11,4 +11,8 @@ class Cart with ChangeNotifier {
 
     notifyListeners();
   }
+
+  delete(Item product) {
+    selectedProducts.remove(product);
+  }
 }
