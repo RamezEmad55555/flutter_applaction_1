@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/shared/appbar.dart';
+import 'package:flutter_application_1/shared/colors.dart';
 import 'package:provider/provider.dart';
 
 class CheckOut extends StatelessWidget {
@@ -9,6 +10,7 @@ class CheckOut extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: appbarGreen,
         title: Text("Checkout screen"),
         actions: [ProductsAndPrice()],
       ),
