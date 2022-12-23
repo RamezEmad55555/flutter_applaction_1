@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, unused_import, must_be_immutable, use_key_in_widget_constructors, sort_child_properties_last
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/model/product.dart';

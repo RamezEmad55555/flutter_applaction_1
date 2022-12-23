@@ -1,4 +1,4 @@
-// ignore_for_file: non_constant_identifier_names
+// ignore_for_file: non_constant_identifier_names, sort_child_properties_last, prefer_const_constructors
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/pages/checkout.dart';
