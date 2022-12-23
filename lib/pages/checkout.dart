@@ -44,6 +44,7 @@ class CheckOut extends StatelessWidget {
                       }),
                 ),
               ),
+              ElevatedButton(onPressed: onPressed, child: child)
             ],
           ),
         );
