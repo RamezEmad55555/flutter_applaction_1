@@ -24,9 +24,7 @@ class MyApp extends StatelessWidget {
       },
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: Details(
-          product: Item(price: 15000, imgPath: "assets/img/Audi.png"),
-        ),
+        home: Home(),
       ),
     );
   }

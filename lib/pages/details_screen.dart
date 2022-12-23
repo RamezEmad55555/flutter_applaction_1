@@ -20,44 +20,36 @@ class _DetailsState extends State<Details> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-            actions: [
-              Row(
+        appBar: AppBar(actions: [
+          Row(
+            children: [
+              Stack(
                 children: [
-                  Stack(
-                    children: [
-                      Container(
-                          child: Text(
-                            "1",
-                            style:
-                                TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
-                          ),
-                          padding: EdgeInsets.all(5),
-                          decoration: BoxDecoration(
-                              color: Color.fromARGB(211, 164, 255, 193),
-                              shape: BoxShape.circle)),
-                      IconButton(
-                        onPressed: () {},
-                        icon: Icon(Icons.add_shopping_cart),
+                  Container(
+                      child: Text(
+                        "1",
+                        style: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
                       ),
-                    ],
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(right: 10),
-                    child: Text(
-                      "\$ 30,000",
-                      style: TextStyle(fontSize: 20),
-                    ),
+                      padding: EdgeInsets.all(5),
+                      decoration: BoxDecoration(
+                          color: Color.fromARGB(211, 164, 255, 193),
+                          shape: BoxShape.circle)),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.add_shopping_cart),
                   ),
                 ],
               ),
+              Padding(
+                padding: const EdgeInsets.only(right: 10),
+                child: Text(
+                  "\$ 30,000",
+                  style: TextStyle(fontSize: 20),
+                ),
+              ),
             ],
-            backgroundColor: appbarGreen,
-            title: Consumer<Cart>(
-              builder: (context, classInstancee, child) {
-                return Text("${classInstancee.myName}");
-              },
-            )),
+          ),
+        ], backgroundColor: appbarGreen, title: Text("Details")),
         body: SingleChildScrollView(
           child: Column(
             children: [
