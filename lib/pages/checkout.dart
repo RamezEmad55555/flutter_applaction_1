@@ -19,7 +19,9 @@ class CheckOut extends StatelessWidget {
         child: ListView.builder(
             padding: const EdgeInsets.all(8),
             itemCount: mylist.length,
-            itemBuilder: (BuildContext context, int index) {}),
+            itemBuilder: (BuildContext context, int index) {
+              return Container();
+            }),
       ),
     );
   }
