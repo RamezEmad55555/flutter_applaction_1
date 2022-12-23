@@ -116,7 +116,7 @@ class Home extends StatelessWidget {
                     children: [
                       Container(
                           child: Text(
-                            "1",
+                            "0",
                             style:
                                 TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
                           ),
@@ -133,7 +133,7 @@ class Home extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(right: 10),
                     child: Text(
-                      "\$ 30,000",
+                      "\$ 0",
                       style: TextStyle(fontSize: 20),
                     ),
                   ),
