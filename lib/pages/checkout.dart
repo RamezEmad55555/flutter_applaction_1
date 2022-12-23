@@ -18,28 +18,33 @@ class CheckOut extends StatelessWidget {
             title: Text("Checkout screen"),
             actions: [ProductsAndPrice()],
           ),
-          body: SingleChildScrollView(
-            child: SizedBox(
-              height: 600,
-              child: ListView.builder(
-                  padding: const EdgeInsets.all(8),
-                  itemCount: ClassInstance.selectedProducts.length,
-                  itemBuilder: (BuildContext context, int index) {
-                    return Card(
-                      child: ListTile(
-                        title: Text(ClassInstance.selectedProducts[index].name),
-                        subtitle: Text(
-                            "${ClassInstance.selectedProducts[index].price} - {Main Branch}"),
-                        leading: CircleAvatar(
-                          backgroundImage: AssetImage(
-                              ClassInstance.selectedProducts[index].imgPath),
-                        ),
-                        trailing: IconButton(
-                            onPressed: () {}, icon: Icon(Icons.remove)),
-                      ),
-                    );
-                  }),
-            ),
+          body: Column(
+            children: [
+              SingleChildScrollView(
+                child: SizedBox(
+                  height: 600,
+                  child: ListView.builder(
+                      padding: const EdgeInsets.all(8),
+                      itemCount: ClassInstance.selectedProducts.length,
+                      itemBuilder: (BuildContext context, int index) {
+                        return Card(
+                          child: ListTile(
+                            title: Text(
+                                ClassInstance.selectedProducts[index].name),
+                            subtitle: Text(
+                                "${ClassInstance.selectedProducts[index].price} - {Main Branch}"),
+                            leading: CircleAvatar(
+                              backgroundImage: AssetImage(ClassInstance
+                                  .selectedProducts[index].imgPath),
+                            ),
+                            trailing: IconButton(
+                                onPressed: () {}, icon: Icon(Icons.remove)),
+                          ),
+                        );
+                      }),
+                ),
+              ),
+            ],
           ),
         );
       });
