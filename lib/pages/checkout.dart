@@ -50,7 +50,8 @@ class CheckOut extends StatelessWidget {
                   "click here",
                   style: TextStyle(fontSize: 19),
                 ),
-                style: ButtonStyle(),
+                style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(value)),
               )
             ],
           ),
