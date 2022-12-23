@@ -29,6 +29,7 @@ class CheckOut extends StatelessWidget {
                         backgroundImage: AssetImage("PATH"),
                       ),
                       title: Text("TEST"),
+                      trailing: IconButton(onPressed: onPressed, icon: icon),
                     ),
                   );
                 }),
