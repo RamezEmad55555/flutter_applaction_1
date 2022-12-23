@@ -22,7 +22,12 @@ class CheckOut extends StatelessWidget {
                 padding: const EdgeInsets.all(8),
                 itemCount: ClassInstance.selectedProducts.length,
                 itemBuilder: (BuildContext context, int index) {
-                  return Cart();
+                  return Card(
+                    child: ,
+
+
+
+                  );
                 }),
           ),
         );
