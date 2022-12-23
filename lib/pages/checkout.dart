@@ -16,6 +16,7 @@ class CheckOut extends StatelessWidget {
       ),
       body: SizedBox(
         height: 300,
+        child: ,
       ),
     );
   }
