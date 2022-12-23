@@ -141,7 +141,7 @@ class Home extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(right: 10),
                       child: Text(
-                        "\$ 0",
+                        "\$ ${ClassInstance.price}",
                         style: TextStyle(fontSize: 20),
                       ),
                     ),
