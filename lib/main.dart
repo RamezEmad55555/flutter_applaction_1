@@ -5,6 +5,7 @@ import 'package:flutter_application_1/pages/Login.dart';
 import 'package:flutter_application_1/pages/details_screen.dart';
 import 'package:flutter_application_1/pages/home.dart';
 import 'package:flutter_application_1/pages/register.dart';
+import 'package:flutter_application_1/provider/cart.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
       create: (context) {
-        return Classname();
+        return Cart();
       },
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
