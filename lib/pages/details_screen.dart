@@ -125,7 +125,7 @@ class _DetailsState extends State<Details> {
                         width: 3,
                       ),
                       Text(
-                        "Car shop",
+                        "Car show",
                         style: TextStyle(fontSize: 18),
                       ),
                     ],
@@ -149,7 +149,7 @@ class _DetailsState extends State<Details> {
               Text(
                 "Audi pioneered mid-range performance luxury sedans in India with the S4 in 2012, and a couple of generations down and a sleeker body style later, here is the latest Audi S5 Sportback. Packing a 354hp 3.0-litre turbo-petrol V6, and eight-speed auto and Quattro AWD, it does 0-100kph in a claimed 4.8sec. It was facelifted for 2021 and comes with more aggressive looks and Audi's latest MMI touch media interface. A CBU import, it is priced at Rs 79.06 lakh (ex-showroom, before options) and rivals other mid-range performance luxury cars like the BMW M340i and the Mercedes-AMG C43 Coupe.",
                 style: TextStyle(
-                  fontSize: 18,
+                  fontSize: 20,
                 ),
                 maxLines: isReadmore ? 4 : null,
                 overflow: TextOverflow.fade,
