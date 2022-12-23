@@ -28,7 +28,8 @@ class CheckOut extends StatelessWidget {
                     return Card(
                       child: ListTile(
                         title: Text(ClassInstance.selectedProducts[index].name),
-                        subtitle: Text("TEST"),
+                        subtitle: Text(
+                            "${ClassInstance.selectedProducts[index].price} - {Main Branch}"),
                         leading: CircleAvatar(
                           backgroundImage: AssetImage(
                               ClassInstance.selectedProducts[index].imgPath),
