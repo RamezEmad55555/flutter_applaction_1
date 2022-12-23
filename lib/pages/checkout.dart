@@ -45,14 +45,15 @@ class CheckOut extends StatelessWidget {
                 ),
               ),
               ElevatedButton(
-                onPressed: () {},
-                child: Text(
-                  "click here",
-                  style: TextStyle(fontSize: 19),
-                ),
-                style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(value)),
-              )
+                  onPressed: () {},
+                  child: Text(
+                    "click here",
+                    style: TextStyle(fontSize: 19),
+                  ),
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(value),
+                    padding: MaterialStateProperty.all(value),
+                  ))
             ],
           ),
         );
