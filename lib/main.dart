@@ -1,6 +1,7 @@
 // ignore_for_file: unused_import
 
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/model/product.dart';
 import 'package:flutter_application_1/pages/Login.dart';
 import 'package:flutter_application_1/pages/details_screen.dart';
 import 'package:flutter_application_1/pages/home.dart';
@@ -23,7 +24,9 @@ class MyApp extends StatelessWidget {
       },
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: Home(),
+        home: Details(
+          product: Item(price: 15000, imgPath: "assets/img/Audi.png"),
+        ),
       ),
     );
   }
