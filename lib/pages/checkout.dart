@@ -29,7 +29,8 @@ class CheckOut extends StatelessWidget {
                       child: ListTile(
                         subtitle: Text("TEST"),
                         leading: CircleAvatar(
-                          backgroundImage: AssetImage("assets/img/Audi.png"),
+                          backgroundImage: AssetImage(
+                              ClassInstance.selectedProducts[index].imgPath),
                         ),
                         title: Text("TEST"),
                         trailing: IconButton(
