@@ -23,10 +23,7 @@ class CheckOut extends StatelessWidget {
                 itemCount: ClassInstance.selectedProducts.length,
                 itemBuilder: (BuildContext context, int index) {
                   return Card(
-                    child: ,
-
-
-
+                    child: ListTile(),
                   );
                 }),
           ),
