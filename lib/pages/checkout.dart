@@ -47,7 +47,7 @@ class CheckOut extends StatelessWidget {
               ElevatedButton(
                 onPressed: () {},
                  child: Text("click here",style: TextStyle(fontSize: 19),),
-                 ,
+                 style: ,
                  
                  )
             ],
